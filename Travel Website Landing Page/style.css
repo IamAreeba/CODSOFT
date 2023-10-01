@@ -1,0 +1,326 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,900&family=Poppins:wght@200;300;500;600;700&family=Roboto:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+}
+
+:root{
+    --bg-color: #1f2429;
+    --sceond-bg-color:#323946;
+    --main-color:#0ef;
+    --text-color:#fff;
+}
+
+
+
+body{
+    background: rgba(128, 128, 128, 0.183);
+}
+
+.header{
+    /* position: fixed;
+    top: 0;
+    left: 0; */
+    height: 100vh;
+    width: 100%;
+    background : url(images/home-bg.jpg) ;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+
+nav_links a:hover,
+nav a.active{
+    color: var(--maincolor);
+}
+
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+
+.nav_links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+    /* background: pink; */
+}
+
+.nav_links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.register-btn{
+    background: #fff;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.container{
+    padding: 0 7%;
+    
+}
+
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    padding-top: 15%;
+}
+
+
+.search-box{
+    background: #fff;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.search-box form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.search-box form input{
+    display: flex;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.search-box form button{
+    background: #5b53ff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-box form button img{
+    width: 15px;
+    margin-top: 5px;
+}
+
+.location{
+    flex: 1;
+      /* Use all the space in the row */
+}
+
+.search-box form{
+    font-weight: 600;
+}
+
+/* ==============  Exclusives ==================== */
+
+.title{
+    /* top: 10%; */
+    margin: 0 0 10px 0;
+    /* font-size: 2vw; */
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    background-color: yellow;
+}
+
+.exclusive-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));    
+    grid-gap: 20px;
+}
+
+.exclusive-images div img{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* .exclusive-images div{
+    position: relative;
+}
+
+.exclusive-images div span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* .exclusive-images div img:hover{
+    box-shadow: 0 15px 20px rgba(21, 74, 114, 0.9);
+} */
+
+
+
+
+/* ==============  Section About ==================== */
+
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 115vh;
+    gap: 2rem;
+   
+}
+
+.about-img img{
+    
+    width: 35vw;
+    height: 99vh;
+    margin-top: 10%;
+    margin-right: 40rem;
+    position: relative;
+    bottom: 105px;
+    
+    
+}
+
+.about-content{
+    
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    margin-top: 55%;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 30px;
+    background: #fff;
+}
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+    font-size: 2.6rem;
+    margin-left: 20px;
+}
+
+.about-content h3{
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.about-content p{
+    font-size: 1.2rem;
+    margin: 2rem 0 3rem;
+    margin-left: 10px;
+}
+
+.about-content-img{
+    display: flex;
+    justify-content: space-between;
+    width: 1rem;
+    height: 10rem;
+    margin: 20px;
+    gap: 10px;
+    
+}
+
+/* ==============  Section About End ==================== */
+
+
+/* =============== Break Points =============== */
+
+/* @media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+} */
+
+@media(max-width: 991px){
+    .header{
+        padding:  2rem 3%;
+    }
+
+    section{
+        padding: 10rem 3% 2rem;
+    }
+
+    footer{
+        padding: 3rem 3%;
+    }
+    
+}
+
+
+
+@media(max-width: 1300px){
+    #menu-icon{
+        margin: 50px 0 0 0;
+        display: block;
+       
+    }
+
+    .nav_links{
+        position: absolute;
+        /* top: 100%; */
+        font-size: 1rem;
+        left: 0;
+        width: 100%;
+        padding: .5rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+
+        /* display: none; */
+    }
+
+    /* .nav_links.active{
+        display: block;
+    } */
+
+    .nav_links a{
+        display: block;
+        /* font-size: 2rem; */
+        /* margin: 3rem 0; */
+    }
+}
+
+
+
+
+
+
+
+
+
+
